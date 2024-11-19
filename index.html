@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz Game</title>
+    <link rel="stylesheet" href="src/output.css" />
+  </head>
+  <body class="h-screen w-screen bg-black flex justify-center items-center">
+    <main>
+      <!-- main container -->
+      <div
+        id="main-container"
+        class="w-96 bg-slate-800 p-3 text-slate-200 flex flex-col justify-center items-center gap-4 rounded-md"
+      >
+        <!--1st element - Heading -->
+        <h1 class="text-3xl font-bold">Quiz Game</h1>
+        <!-- START QUIZ BUTTON -->
+        <button
+          id="startbutton"
+          type="submit"
+          class="w-full bg-blue-600 text-2xl px-3 py-2 rounded-lg hover:bg-blue-700"
+        >
+          Start Quiz
+        </button>
+
+        <!-- Question Section -->
+        <div id="Question-box" class="w-5/6 text-center gap-3 hidden">
+          <!-- Question -->
+          <h1 class="text-2xl font-semibold"></h1>
+          <!-- options starts here -->
+          <button
+            class="w-full py-2 bg-slate-600 text-xl font-semibold rounded-md hover:bg-slate-700"
+          ></button>
+          <button
+            class="w-full py-2 bg-slate-600 text-xl font-semibold rounded-md hover:bg-slate-700"
+          ></button>
+          <button
+            class="w-full py-2 bg-slate-600 text-xl font-semibold rounded-md hover:bg-slate-700"
+          ></button>
+          <button
+            class="w-full py-2 bg-slate-600 text-xl font-semibold rounded-md hover:bg-slate-700"
+          ></button>
+        </div>
+        <!-- button Next Question -->
+        <button
+          id="nextbutton"
+          class="bg-blue-600 text-lg px-3 py-1 rounded-lg hover:bg-blue-700 hidden"
+        >
+          Next
+        </button>
+        <!-- div i.e heading for Score -->
+        <div id="scorebox" class="text-center hidden">
+          <h1 class="text-2xl font-semibold"></h1>
+        </div>
+        <!-- button for Restart -->
+        <button
+          id="restartbutton"
+          class="bg-blue-600 text-lg px-3 py-1 rounded-lg hover:bg-blue-700 hidden"
+        >
+          Restart Quiz
+        </button>
+        <!-- end of main container -->
+      </div>
+    </main>
+
+    <!-- javascript file -->
+    <script src="script.js"></script>
+  </body>
+</html>
